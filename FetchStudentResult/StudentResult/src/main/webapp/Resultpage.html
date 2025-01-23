@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Result Page</title>
+<style>
+    /* Internal CSS for form elements */
+    
+    form {
+        background-color: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 400px;
+        margin: 20px auto;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    th {
+        text-align: left;
+        font-size: 16px;
+        color: #333;
+        padding-right: 10px;
+        margin-bottom: 10px;
+    }
+
+    td {
+        padding-left: 10px;
+    }
+
+    input[type="text"] {
+        width: 100%;
+        padding: 12px;
+        margin: 8px 0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 14px;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+        padding: 12px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        font-size: 24px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+</style>
+</head>
+<body>
+
+<h1 style="text-align: center; color: Black;">Enter Valid Information to Fetch Result</h1>
+
+<form action="http://localhost:9090/StudentResult/FetchResult">
+    <table>
+        <tr>
+            <th>Enter Student Id:</th>
+            <td><input type="text" name="id" required></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="submit" value="Fetch Result">
+            </td>
+        </tr>
+    </table>
+</form>
+
+</body>
+</html>
