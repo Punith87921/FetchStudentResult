@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Sign up</title>
+<style>
+    /* Internal CSS for form elements */
+    
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+    }
+
+    h1, h2 {
+        color: #333;
+    }
+
+    form {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 400px;
+        margin: 20px auto;
+    }
+
+    table {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    th {
+        text-align: left;
+        font-size: 14px;
+        color: #333;
+        padding: 10px 0;
+    }
+
+    td {
+        padding: 10px;
+    }
+
+    /* Ensure input fields are the same size */
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+        width: 100%;
+        padding: 12px;
+        font-size: 14px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-bottom: 15px;
+        box-sizing: border-box;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+        padding: 12px;
+        background-color: #4CAF50;
+        color: white;
+        font-size: 16px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+
+    /* Centered content */
+    center {
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+
+<center>
+<h1>Welcome to SignUp/Register page</h1>
+</center>
+
+<form action="http://localhost:9090/StudentResult/Signup">
+    <table>
+        <tr>
+            <th>USERID:</th>
+            <td><input type="text" name="uid" required placeholder="Enter your userid"></td>
+        </tr>
+        <tr>
+            <th>EMAIL:</th>
+            <td><input type="email" name="email" required placeholder="Enter your email"></td>
+        </tr>
+        <tr>
+            <th>USERNAME:</th>
+            <td><input type="text" name="un" required placeholder="Enter your username"></td>
+        </tr>
+        <tr>
+            <th>Password:</th>
+            <td><input type="password" name="pwd" required placeholder="Enter your password"></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="submit" value="Sign UP">
+            </td>
+        </tr>
+    </table>
+</form>
+
+<center>
+<h2>Already Registered : </h2>
+<a href="http://localhost:9090/StudentResult/Login.html">Click here to || <B>Log-In</B> || page.</a>
+</center>
+
+</body>
+</html>

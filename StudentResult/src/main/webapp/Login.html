@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Login Form</title>
+<style>
+    /* Internal CSS for form elements */
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+    }
+
+    h2 {
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    form {
+        background-color: white;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 400px;
+        margin: 20px auto;
+    }
+
+    table {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    th {
+        text-align: left;
+        font-size: 16px;
+        color: #333;
+        padding-right: 10px;
+    }
+
+    td {
+        padding-left: 10px;
+    }
+
+    /* Ensure all input fields are the same size */
+    input[type="text"],
+    input[type="password"] {
+        width: 100%;
+        padding: 12px;
+        margin: 8px 0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 14px;
+        box-sizing: border-box; /* Ensures padding doesn't affect width */
+    }
+
+    input[type="submit"] {
+        width: 100%;
+        padding: 12px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+
+    /* Centered content */
+    center {
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+
+<center>
+<h2>Welcome to LogIn Page</h2>
+
+<form action="http://localhost:9090/StudentResult/Login">
+    <table>
+        <tr>
+            <th>ID:</th>
+            <td><input type="text" name="uid" required placeholder="Enter your user ID"></td>
+        </tr>
+        <tr>
+            <th>PWD:</th>
+            <td><input type="password" name="up" required placeholder="Enter your password"></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="submit" value="Log In">
+            </td>
+        </tr>
+    </table>
+</form>
+
+<br><br>
+
+<a href="http://localhost:9090/StudentResult/Signup.html">Click here to ||<strong>Sign-Up</strong>|| page.</a>
+</center>
+
+</body>
+</html>
