@@ -36,7 +36,7 @@ Open MySQL Workbench and create a database:
 
 ![F5](https://github.com/user-attachments/assets/3d7e094d-e645-410d-a2dc-bcc959ed4693)
 
-• User Table (user)
+• User Table (user):
 This table stores student login credentials and basic information.
 CREATE TABLE user (
     id INT PRIMARY KEY AUTO_INCREMENT,
@@ -47,7 +47,7 @@ CREATE TABLE user (
 
 ![F6](https://github.com/user-attachments/assets/14d69036-67ff-4e2c-a24c-6cf00e3d6e72)
 
-• Result Table (result)
+• Result Table (result):
 Stores student results, including marks for three subjects and overall status.
 CREATE TABLE result (
     id INT PRIMARY KEY AUTO_INCREMENT,
@@ -74,23 +74,23 @@ Features:
 
 Screenshots:The following images demonstrate the various pages and functionalities to fetch student result.
 
--> Signup Page
+-> Signup Page:
 Users enter their information to register.
 
 ![FI1](https://github.com/user-attachments/assets/fe8e4ae5-edba-46e3-8204-7567a00bef8a)
 
 
--> Login Page
+-> Login Page:
 Users enter their credentials to log in.
 
 ![FI2](https://github.com/user-attachments/assets/23231a54-d760-4cbd-8372-d3c92284bd9f)
 
--> Fetch Result Page
+-> Fetch Result Page:
 Enter the Student ID to fetch the result.
 
 ![FI3](https://github.com/user-attachments/assets/70167865-d983-4b8f-bd30-6e080e6f0f15)
 
--> Display Result Page
+-> Display Result Page:
 The student's marks and status are displayed.
 
 ![FI4](https://github.com/user-attachments/assets/e37423ce-b2dc-470b-bc4e-38dd0caf211a)
